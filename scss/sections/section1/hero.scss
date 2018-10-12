@@ -1,0 +1,84 @@
+.hero {
+  background: url('../img/section1/texture.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__container {
+  justify-content: flex-start;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-right: 15px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    @include circle(5px, $white);
+    margin: 0 12px;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.nav__link {
+  color: $white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.31;
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: inline-block;
+  transition: .5s;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex: .8;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__desc-text {
+  font-size: 65px;
+  line-height: 1.31;
+  color: $white;
+  @include lifehack();
+}
+
+.hero__pic, .hero__desc {
+  width: 50%;
+}
+
+.hero__pic-img {
+  max-width: 95%;
+}

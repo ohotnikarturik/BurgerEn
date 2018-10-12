@@ -1,0 +1,33 @@
+// colors
+$white: #ffffff;
+$yellow: #f9b43b;
+$orange: #e35028;
+$red: #e45028;
+$red-hover: #c1401e;
+$black: #2f3234;
+
+// config
+
+@import "config/mixins.scss";
+
+// base
+
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+@import "layout/adjustment.scss";
+
+// sections
+
+@import "sections/common/arrow-btn.scss";
+@import "sections/common/section-title.scss";
+@import "sections/common/btn.scss";
+@import "sections/common/fixed-navigation.scss";
+@import "sections/section1/hero.scss";
+@import "sections/section2/best.scss";
+@import "sections/section3/order.scss";
+@import "sections/section4/team.scss";
+@import "sections/section5/menu.scss";
+@import "sections/section6/reviews.scss";
+@import "sections/section7/delivery.scss";
+@import "sections/section8/location.scss";
+

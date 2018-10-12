@@ -1,0 +1,26 @@
+.arrow-block {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-button {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid transparent;
+  border-bottom-color: $white;
+  border-right-color: $white;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  position: absolute;
+
+  &_left {
+    transform: rotate(135deg);
+  }
+
+  &_right {
+    transform: rotate(315deg);
+  }
+}
+

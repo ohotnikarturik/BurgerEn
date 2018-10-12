@@ -1,0 +1,199 @@
+.order {
+  background: url('../img/section3/Rectangle\ 1.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.order__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.arrow__block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.order__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order__content-left, .order__content-right {
+  width: 50%;
+}
+
+.order__content-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__composition {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f08c33;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+
+  & span {
+    @include gagalin;
+  }
+
+  &:hover {
+    background-color: $red;
+
+    & .composition__list {
+      display: flex;
+    }
+  }
+
+}
+
+.order__composition-text {
+  color: $white;
+}
+
+.composition__list {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 270px;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  display: none; 
+  transition: all .5s;
+}
+
+.composition__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $black;
+  font-size: 14px;
+  @include ubuntu(medium);
+}
+
+.composition__item-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.composition__item-img {
+  width: 40px;
+  height: 35px;
+  
+  &_color {
+    &_beef {
+      fill: #e25028;
+    }
+
+    &_buns {
+      fill: #f8b43a;
+    }
+
+    &_salad {
+      fill: #a3cb6c;
+    }
+
+    &_sauce {
+      fill: #e25028;
+    }
+
+    &_cucumber {
+      fill: #8ac03e;
+    }
+
+    &_cheese {
+      fill: #f8b43a;
+    }
+  }
+}
+
+.order__content-img {
+  max-width: 95%;
+}
+
+.order__kalorit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.order__kalorit-pic {
+  position: relative;
+}
+
+.order__kalorit-amount {
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  color: $white;
+  opacity: .5;
+  @include gagalin;
+  font-size: 20px;
+}
+
+.order__kalorit-text {
+  color: $white;
+  opacity: .5;
+  @include gagalin;
+  font-size: 14px;
+}
+
+.order__desc-text {
+  @include ubuntu;
+  color: $white;
+  font-size: 14px;
+}
+
+.order__desc-price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.order__price-cost {
+  display: flex;
+  align-items: flex-end;
+}
+
+.order__desc-price-number {
+  @include gagalin;
+  font-size: 72px;
+  color: $red;
+}
+
+.order__desc-price-text {
+  @include gagalin;
+  font-size: 30px;
+  color: $red;
+  align-items: flex-end;
+}
+
+
+
+
+
+
+
+

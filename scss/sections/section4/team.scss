@@ -1,0 +1,73 @@
+.team {
+  background: url('../img/section4/SBS_1255-X2.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(#2f3234, .93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.team__acco-item--active {
+  .team__acco-trigger {
+    color: $yellow;
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+
+  .team__acco-content {
+    height: auto;
+  }
+}
+
+.team__content {
+  width: 70%;
+}
+
+.team__acco-trigger {
+  color: $white;
+  @include gagalin;
+  font-size: 14px;
+  display: flex;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: $yellow;
+
+  }
+}
+
+.team__acco-content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+}
+
+.team__acco-article-title {
+  color: $white;
+  font-size: 14px;
+  @include ubuntu(bold);
+}
+
+.team__acco-article-content {
+  color: $white;
+  font-size: 14px;
+  @include ubuntu(light);
+  line-height: 1.71;
+}
+

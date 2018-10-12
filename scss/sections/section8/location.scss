@@ -1,0 +1,54 @@
+.location {
+  background: url('../img/section8/map.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer {
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: url('/img/section8/footer/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__address-text {
+  color: $white;
+  line-height: 1.71;
+}
+
+.footer__phone-pic {
+  width: 12px;
+  height: 11px;
+  fill: $red;
+}
+
+.footer__social-img {
+  width: 20px;
+  height: 20px;
+  fill: #5a5a5a;
+  transition: .3s;
+
+  &:hover {
+    fill: $white;
+  }
+}
+
+.footer__phone-number {
+  @include ubuntu(bold);
+  color: $red;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

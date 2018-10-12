@@ -1,0 +1,36 @@
+.fixed-nav {
+  position: fixed;
+  top: 80px;
+  right: 50px;
+}
+
+.fixed-nav__item {
+  margin-bottom: 5px;
+}
+
+.fixed-nav__link {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  transition: .5s;
+
+  &:hover {
+    border-color: $white;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: $white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
