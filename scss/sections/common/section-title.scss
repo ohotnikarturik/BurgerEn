@@ -2,6 +2,8 @@
   font-size: 72px;
   color: $yellow;
   @include gagalin();
+  font-weight: normal;
+  margin-top: 0;
   
   &_color{
     &_black {
@@ -18,6 +20,7 @@
   &_color{
     &_white {
       color: $white;
+      line-height: 0.9;
     }
   }
 }

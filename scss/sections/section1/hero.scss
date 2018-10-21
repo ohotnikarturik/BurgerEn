@@ -12,6 +12,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+}
+
+.logo__pic {
+  display: block;
+  max-width: 92px;
+  max-height: 69px;
 }
 
 .header__btns {
@@ -37,8 +44,8 @@
     display: inline-block;
     vertical-align: middle;
     content: '';
-    @include circle(5px, $white);
-    margin: 0 12px;
+    @include circle(4px, $white);
+    margin: 0 15px;
   }
 
   &:last-child:after {
@@ -66,19 +73,31 @@
   flex: .8;
   align-items: center;
   justify-content: center;
+  margin-bottom: 90px;
+}
+
+.hero__desc {
+  padding-top: 70px;
 }
 
 .hero__desc-text {
   font-size: 65px;
-  line-height: 1.31;
+  line-height: 1;
   color: $white;
   @include lifehack();
+  text-transform: lowercase;
 }
 
 .hero__pic, .hero__desc {
   width: 50%;
+  padding-left: 10px;
 }
 
 .hero__pic-img {
   max-width: 95%;
+}
+
+.arrow-block_center {
+  display: flex;
+  justify-content: center;
 }

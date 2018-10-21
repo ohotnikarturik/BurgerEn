@@ -9,20 +9,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
-
-.arrow__block {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-
 
 .order__content {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -128,7 +119,7 @@
 }
 
 .order__content-img {
-  max-width: 95%;
+  max-width: 99%;
 }
 
 .order__kalorit {
@@ -161,20 +152,27 @@
   font-size: 14px;
 }
 
+.order__desc {
+  padding-top: 45px;
+  padding-left: 10px;
+}
+
 .order__desc-text {
   @include ubuntu;
   color: $white;
   font-size: 14px;
+  margin-top: 45px;
 }
 
 .order__desc-price {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  margin-top: 45px;
 }
 
 .order__price-cost {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .order__desc-price-number {
@@ -187,8 +185,13 @@
   @include gagalin;
   font-size: 30px;
   color: $red;
-  align-items: flex-end;
+  margin-top: 25px;
 }
+
+.order__price-order {
+  margin: 30px 0 0 46px;
+}
+
 
 
 

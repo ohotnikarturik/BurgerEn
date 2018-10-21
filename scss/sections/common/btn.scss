@@ -6,7 +6,7 @@
   vertical-align: middle;
   display: inline-block;
   background-color: $red;
-  padding: 10px;
+  padding: 10px 25px;
   text-align: center;
   border-radius: 5px;
   transition: .5s;
@@ -35,8 +35,23 @@
     outline: none;
 
     &:hover {
-      background-color: transparent;
+      background: transparent;
+      
     }
   }
+}
+
+// ANIMATION
+@-webkit-keyframes pulsate {
+  50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+  50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+.btn {
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
 }
 

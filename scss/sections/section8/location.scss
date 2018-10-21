@@ -20,15 +20,29 @@
   align-items: center;
 }
 
+.ftooer__address {
+  margin-top: 5px;
+}
+
 .footer__address-text {
   color: $white;
   line-height: 1.71;
 }
 
+.footer__phone {
+  align-items: center;
+} 
+
 .footer__phone-pic {
   width: 12px;
   height: 11px;
   fill: $red;
+  margin-right: 5px;
+}
+
+.footer__social-item {
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .footer__social-img {
@@ -45,6 +59,7 @@
 .footer__phone-number {
   @include ubuntu(bold);
   color: $red;
+  font-size: 14px;
 }
 
 .footer__social-list {

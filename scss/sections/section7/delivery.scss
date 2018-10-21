@@ -4,9 +4,14 @@
   position: relative;
 }
 
+.delivery-title {
+  margin-top: -30px;
+}
+
 .form {
   display: flex;
   color: $white;
+  margin-top: 25px;
 }
 
 .form__left {
@@ -35,16 +40,16 @@ input, textarea {
 }
 
 .form__input {
-  padding: 10px;
+  padding: 10px 20px;
   background: $white;
   border: none;
   border-radius: 5px;
   width: 100%;
   outline: none;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 
   &:focus {
-    border: 2px solid $yellow;
+    border: 1px solid $yellow;
     outline: none;
   }
 }
@@ -60,10 +65,11 @@ input, textarea {
   border-radius: 5px;
   resize: none;
   outline: none;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
+  padding: 10px 20px;
 
   &:focus {
-    border: 2px solid $yellow;
+    border: 1px solid $yellow;
     outline: none;
   }
 }
@@ -71,8 +77,12 @@ input, textarea {
 .form__row-radio {
   display: flex;
 }
+
 .form__radio {
   display: flex;
+  margin-top: 10px;
+  margin-right: 20px;
+  align-items: center;
 }
 
 .form__radio-elem, .form__checkbox-elem {
@@ -88,6 +98,7 @@ input, textarea {
   background-color: $white;
   cursor: pointer;
   position: relative;
+  margin-right: 10px;
 
   &:after {
     content: '';
@@ -103,8 +114,13 @@ input, textarea {
   }
 }
 
+.form__row-checkbox {
+  margin-top: 20px;
+}
+
 .form__checkbox {
   display: flex;
+  align-items: center;
 }
 
 .form__radio-elem:checked+.form__radio-fake:after {
@@ -119,6 +135,7 @@ input, textarea {
   border: 1px solid $white;
   position: relative;
   cursor: pointer;
+  margin-right: 5px;
 
   &:after {
     content: '';
@@ -130,6 +147,10 @@ input, textarea {
     top: 2px;
     left: 1px;
   }
+}
+
+.form__button {
+  margin-top: 15px;
 }
 
 .form__checkbox-elem:checked+.form__checkbox-fake:after {

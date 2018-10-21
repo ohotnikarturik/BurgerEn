@@ -33,17 +33,24 @@
   background: rgba(#141414, .7);
   cursor: pointer;
   transform: scale(.5);
+  padding: 45px 20px;
 }
 
 .reviews__title {
   @include gagalin();
   font-size: 14px;
   color: $white;
+  
 }
 
 .reviews__text {
   @include ubuntu(light);
   font-size: 14px;
   color: $white;
-  line-height: 1.71;
+  line-height: 1.75;
+  margin-top: 20px;
+}
+
+.btn_hover_black {
+  margin-top: 10px;
 }

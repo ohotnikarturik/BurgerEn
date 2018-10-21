@@ -9,7 +9,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 50%;
+  width: 49%;
   background: rgba(#2f3234, .93);
   display: flex;
   align-items: center;
@@ -31,7 +31,21 @@
 }
 
 .team__content {
+  margin-top: -50px;
   width: 70%;
+}
+
+.team__acco {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.team__acco-item {
+  margin-top: 35px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .team__acco-trigger {
@@ -39,16 +53,17 @@
   @include gagalin;
   font-size: 14px;
   display: flex;
+  align-items: center;
 
   &:before {
     content: '';
     display: block;
     width: 0px;
     height: 0;
-    border: 9px solid transparent;
+    border: 5px solid transparent;
     border-bottom-width: 0;
     border-top-color: $yellow;
-
+    margin-right: 10px;
   }
 }
 
@@ -56,6 +71,28 @@
   display: flex;
   height: 0;
   overflow: hidden;
+}
+
+.team__acco-pic {
+  border-radius: 50%;
+  overflow: hidden;
+  max-height: 100px;
+  min-width: 100px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.team__acco-avatar {
+  transform: translateX(-20px);
+}
+
+.team__acco-text {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.team__acco-article-content {
+  margin-top: 10px;
 }
 
 .team__acco-article-title {

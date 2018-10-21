@@ -4,6 +4,14 @@
   position: relative;
 }
 
+.menu__container {
+  justify-content: space-between;
+}
+
+.menu__title {
+  padding: 105px 0 0 95px;
+}
+
 .menu__acco-list {
   position: absolute;
   top: 0;
@@ -40,6 +48,7 @@
   color: $white;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+  margin-bottom: 40px;
 }
 
 .menu__acco-text {

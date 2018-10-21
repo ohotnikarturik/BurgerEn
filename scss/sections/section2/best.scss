@@ -4,9 +4,14 @@
   position: relative;
 }
 
+.best-content {
+  margin-top: 110px;
+}
+
 .best__list {
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
 .best__item {
@@ -38,6 +43,7 @@
 
 .best__info {
   text-align: center;
+  margin-top: 30px;
 }
 
 .best__title {
@@ -50,5 +56,6 @@
   opacity: .8;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 15px;
 }
 
