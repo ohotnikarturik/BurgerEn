@@ -10,6 +10,10 @@ $black: #2f3234;
 
 @import "config/mixins.scss";
 
+// media
+
+@import "config/media.scss";
+
 // base
 
 @import "layout/fonts.scss";
@@ -30,4 +34,6 @@ $black: #2f3234;
 @import "sections/section6/reviews.scss";
 @import "sections/section7/delivery.scss";
 @import "sections/section8/location.scss";
+
+
 

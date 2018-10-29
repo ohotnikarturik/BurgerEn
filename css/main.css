@@ -272,6 +272,9 @@ table {
   max-width: 92px;
   max-height: 69px; }
 
+.mrBurger {
+  display: none; }
+
 .header__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,7 +510,8 @@ table {
   display: none;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
-  transition: all .5s; }
+  transition: all .5s;
+  padding: 15px; }
 
 .composition__item {
   display: -webkit-box;
