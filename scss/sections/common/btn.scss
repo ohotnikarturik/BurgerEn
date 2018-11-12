@@ -1,14 +1,14 @@
 .btn {
   color: $white;
   font-weight: 500;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
   vertical-align: middle;
   display: inline-block;
   background-color: $red;
-  padding: 10px 25px;
+  padding: rem(10px) rem(25px);
   text-align: center;
-  border-radius: 5px;
+  border-radius: rem(5px);
   transition: .5s;
 
   &:hover {
@@ -43,14 +43,14 @@
 
 // ANIMATION
 @-webkit-keyframes pulsate {
-  50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+  50% { color: #fff; text-shadow: 0 rem(-1px) rgba(0,0,0,.3), 0 0 rem(5px) #ffd, 0 0 rem(8px) #fff; }
 }
 @keyframes pulsate {
-  50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+  50% { color: #fff; text-shadow: 0 rem(-1px) rgba(0,0,0,.3), 0 0 rem(5px) #ffd, 0 0 rem(8px) #fff; }
 }
 .btn {
   color: rgb(245,245,245);
-  text-shadow: 0 -1px rgba(0,0,0,.1);
+  text-shadow: 0 rem(-1px) rgba(0,0,0,.1);
   -webkit-animation: pulsate 1.2s linear infinite;
   animation: pulsate 1.2s linear infinite;
 }

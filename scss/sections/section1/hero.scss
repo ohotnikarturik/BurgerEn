@@ -5,20 +5,26 @@
 }
 
 .hero__container {
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: rem(10px);
+}
+
+.logo {
+  @include tablets {
+    flex: 1;
+  }
 }
 
 .logo__pic {
   display: block;
-  max-width: 92px;
-  max-height: 69px;
+  max-width: rem(92px);
+  max-height: rem(69px);
 }
 
 .mrBurger {
@@ -31,7 +37,11 @@
 }
 
 .nav {
-  margin-right: 15px;
+  margin-right: rem(15px);
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -48,8 +58,8 @@
     display: inline-block;
     vertical-align: middle;
     content: '';
-    @include circle(4px, $white);
-    margin: 0 15px;
+    @include circle(rem(4px), $white);
+    margin: 0 rem(15px);
   }
 
   &:last-child:after {
@@ -60,7 +70,7 @@
 .nav__link {
   color: $white;
   font-weight: 500;
-  font-size: 13px;
+  font-size: rem(13px);
   line-height: 2.31;
   text-transform: uppercase;
   vertical-align: middle;
@@ -77,15 +87,25 @@
   flex: .8;
   align-items: center;
   justify-content: center;
-  margin-bottom: 90px;
+  margin-bottom: rem(75px);
+
+  @include tablets {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .hero__desc {
-  padding-top: 70px;
+  padding-top: rem(70px);
+
+  @include tablets {
+    text-align: center;
+    padding-top: 0;
+  }
 }
 
 .hero__desc-text {
-  font-size: 65px;
+  font-size: rem(65px);
   line-height: 1;
   color: $white;
   @include lifehack();
@@ -94,7 +114,7 @@
 
 .hero__pic, .hero__desc {
   width: 50%;
-  padding-left: 10px;
+  padding-left: rem(10px);
 }
 
 .hero__pic-img {
@@ -104,4 +124,5 @@
 .arrow-block_center {
   display: flex;
   justify-content: center;
+  margin-bottom: rem(45px);
 }

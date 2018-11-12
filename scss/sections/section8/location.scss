@@ -5,7 +5,7 @@
 }
 
 .footer {
-  height: 60px;
+  height: rem(60px);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -21,7 +21,7 @@
 }
 
 .ftooer__address {
-  margin-top: 5px;
+  margin-top: rem(5px);
 }
 
 .footer__address-text {
@@ -34,20 +34,20 @@
 } 
 
 .footer__phone-pic {
-  width: 12px;
-  height: 11px;
+  width: rem(12px);
+  height: rem(11px);
   fill: $red;
-  margin-right: 5px;
+  margin-right: rem(5px);
 }
 
 .footer__social-item {
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: rem(20px);
+  margin-top: rem(10px);
 }
 
 .footer__social-img {
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   fill: #5a5a5a;
   transition: .3s;
 
@@ -59,7 +59,7 @@
 .footer__phone-number {
   @include ubuntu(bold);
   color: $red;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .footer__social-list {

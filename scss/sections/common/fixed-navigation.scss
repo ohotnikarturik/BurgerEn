@@ -1,18 +1,26 @@
+.fixid-nav__block {
+  display: block;
+
+  @include tablets {
+    display: none;
+  }
+}
+
 .fixed-nav {
   position: fixed;
-  top: 90px;
-  right: 50px;
+  top: rem(90px);
+  right: rem(50px);
 }
 
 .fixed-nav__item {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 
 .fixed-nav__link {
   display: flex;
-  width: 16px;
-  height: 16px;
-  border: 1px solid transparent;
+  width: rem(16px);
+  height: rem(16px);
+  border: rem(1px) solid transparent;
   border-radius: 50%;
   position: relative;
   transition: .5s;
@@ -24,8 +32,8 @@
   &:before {
     content: '';
     display: block;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     background: $white;
     border-radius: 50%;
     position: absolute;

@@ -12,18 +12,41 @@
   position: relative;
 }
 
+.arrow-block__left {
+
+  @include tablets {
+    margin-left: rem(30px);
+  }
+}
+
 .order__content {
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .order__content-left, .order__content-right {
   width: 50%;
+
+  @include tablets {
+    width: 85%;
+  }
 }
 
 .order__content-left {
   display: flex;
   flex-direction: column;
+
+
+  @include tablets {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .order__composition {
@@ -33,9 +56,9 @@
   align-items: center;
   justify-content: center;
   background-color: #f08c33;
-  border-radius: 5px;
-  width: 90px;
-  height: 90px;
+  border-radius: rem(5px);
+  width: rem(90px);
+  height: rem(90px);
   cursor: pointer;
 
   & span {
@@ -58,19 +81,19 @@
 
 .composition__list {
   background-color: rgba(255, 255, 255, 0.9);
-  width: 270px;
-  height: 330px;
+  width: rem(270px);
+  height: rem(330px);
   position: absolute;
   top: 0;
-  left: 90px;
-  border-radius: 5px;
+  left: rem(90px);
+  border-radius: rem(5px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 5px;
+  border-radius: rem(5px);
   display: none; 
   transition: all .5s;
-  padding: 15px;
+  padding: rem(15px);
 }
 
 .composition__item {
@@ -78,7 +101,7 @@
   justify-content: space-between;
   align-items: center;
   color: $black;
-  font-size: 14px;
+  font-size: rem(14px);
   @include ubuntu(medium);
 }
 
@@ -89,8 +112,8 @@
 }
 
 .composition__item-img {
-  width: 40px;
-  height: 35px;
+  width: rem(40px);
+  height: rem(35px);
   
   &_color {
     &_beef {
@@ -128,8 +151,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: rem(60px);
+  height: rem(60px);
 }
 
 .order__kalorit-pic {
@@ -138,37 +161,41 @@
 
 .order__kalorit-amount {
   position: absolute;
-  left: 15px;
-  top: 25px;
+  left: rem(15px);
+  top: rem(25px);
   color: $white;
   opacity: .5;
   @include gagalin;
-  font-size: 20px;
+  font-size: rem(20px);
 }
 
 .order__kalorit-text {
   color: $white;
   opacity: .5;
   @include gagalin;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .order__desc {
-  padding-top: 45px;
-  padding-left: 10px;
+  padding-top: rem(45px);
+  padding-left: rem(10px);
 }
 
 .order__desc-text {
   @include ubuntu;
   color: $white;
-  font-size: 14px;
-  margin-top: 45px;
+  font-size: rem(14px);
+  margin-top: rem(45px);
 }
 
 .order__desc-price {
   display: flex;
   align-items: center;
-  margin-top: 45px;
+  margin-top: rem(45px);
+
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .order__price-cost {
@@ -178,19 +205,26 @@
 
 .order__desc-price-number {
   @include gagalin;
-  font-size: 72px;
+  font-size: rem(72px);
   color: $red;
 }
 
 .order__desc-price-text {
   @include gagalin;
-  font-size: 30px;
+  font-size: rem(30px);
   color: $red;
-  margin-top: 25px;
+  margin-top: rem(25px);
 }
 
 .order__price-order {
-  margin: 30px 0 0 46px;
+  margin: rem(30px) 0 0 rem(46px);
+}
+
+.arrow-block__right {
+
+  @include tablets {
+    margin-right: rem(30px);
+  }
 }
 
 

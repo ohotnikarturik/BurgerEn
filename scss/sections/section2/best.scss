@@ -5,13 +5,13 @@
 }
 
 .best-content {
-  margin-top: 110px;
+  margin-top: rem(110px);
 }
 
 .best__list {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: rem(30px);
 }
 
 .best__item {
@@ -24,8 +24,8 @@
 }
 
 .best__icon {
-  width: 97px;
-  height: 89px;
+  width: rem(97px);
+  height: rem(89px);
 
   &-meat {
       fill: #e04e23;
@@ -43,19 +43,19 @@
 
 .best__info {
   text-align: center;
-  margin-top: 30px;
+  margin-top: rem(30px);
 }
 
 .best__title {
   @include lifehack;
-  font-size: 24px;
+  font-size: rem(24px);
   line-height: 1.17;
 }
 
 .best__desc p {
   opacity: .8;
-  font-size: 14px;
+  font-size: rem(14px);
   line-height: 1.71;
-  margin-top: 15px;
+  margin-top: rem(15px);
 }
 

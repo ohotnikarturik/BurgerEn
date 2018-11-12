@@ -1,5 +1,5 @@
 .section-title {
-  font-size: 72px;
+  font-size: rem(72px);
   color: $yellow;
   @include gagalin();
   font-weight: normal;

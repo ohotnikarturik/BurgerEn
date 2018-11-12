@@ -1,0 +1,22 @@
+.menu-toggle {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.menu-toggle__item {
+  display: block;
+  background-color: $white;
+  width: rem(25px);
+  height: rem(4px);
+  margin-bottom: rem(5px);
+  border-radius: rem(5px);
+  margin-left: rem(30px);
+  
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
