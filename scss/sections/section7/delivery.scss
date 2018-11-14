@@ -12,10 +12,23 @@
   display: flex;
   color: $white;
   margin-top: rem(25px);
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__left {
   flex: 1;
+
+  @include tablets {
+    width: 70%;
+  }
+
+  @include phones {
+    width: 90%;
+  }
 }
 
 .form__row {
@@ -57,6 +70,15 @@ input, textarea {
 .form__right {
   margin-left: rem(20px);
   flex: 1;
+
+  @include tablets {
+    margin-left: 0;
+    width: 70%;
+  }
+
+  @include phones {
+    width: 90%;
+  }
 }
 
 .form__textarea {
@@ -76,6 +98,11 @@ input, textarea {
 
 .form__row-radio {
   display: flex;
+
+  @include phones {
+    justify-content: center;
+    margin-top: rem(35px);
+  }
 }
 
 .form__radio {
@@ -83,6 +110,10 @@ input, textarea {
   margin-top: rem(10px);
   margin-right: rem(20px);
   align-items: center;
+
+  @include phones {
+    margin-top: 0;
+  }
 }
 
 .form__radio-elem, .form__checkbox-elem {
@@ -121,6 +152,11 @@ input, textarea {
 .form__checkbox {
   display: flex;
   align-items: center;
+
+  @include phones {
+    justify-content: center;
+    margin-top: rem(35px);
+  }
 }
 
 .form__radio-elem:checked+.form__radio-fake:after {
@@ -151,6 +187,12 @@ input, textarea {
 
 .form__button {
   margin-top: rem(15px);
+
+  @include phones {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(35px);
+  }
 }
 
 .form__checkbox-elem:checked+.form__checkbox-fake:after {

@@ -17,6 +17,10 @@
   @include tablets {
     margin-left: rem(30px);
   }
+
+  @include phones {
+    margin-left: rem(10px);
+  }
 }
 
 .order__content {
@@ -34,7 +38,7 @@
   width: 50%;
 
   @include tablets {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -73,6 +77,11 @@
     }
   }
 
+  @include phones {
+    position: absolute;
+    top: rem(30px);
+    left: rem(30px)
+  }
 }
 
 .order__composition-text {
@@ -153,6 +162,12 @@
   justify-content: center;
   width: rem(60px);
   height: rem(60px);
+
+  @include phones {
+    position: absolute;
+    top: rem(50px);
+    right: rem(30px)
+  }
 }
 
 .order__kalorit-pic {
@@ -196,6 +211,10 @@
   @include tablets {
     justify-content: center;
   }
+
+  @include phones {
+    margin-top: rem(15px);
+  }
 }
 
 .order__price-cost {
@@ -214,16 +233,28 @@
   font-size: rem(30px);
   color: $red;
   margin-top: rem(25px);
+
+  @include phones {
+    margin-left: rem(10px); 
+  }
 }
 
 .order__price-order {
   margin: rem(30px) 0 0 rem(46px);
+
+  @include phones {
+    margin: rem(10px) 0 0 rem(30px);
+  }
 }
 
 .arrow-block__right {
 
   @include tablets {
     margin-right: rem(30px);
+  }
+
+  @include phones {
+    margin-right: rem(10px);
   }
 }
 

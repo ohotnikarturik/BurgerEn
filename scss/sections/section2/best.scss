@@ -6,16 +6,32 @@
 
 .best-content {
   margin-top: rem(110px);
+
+  @include phones {
+    margin-top: rem(-150px);
+  }
 }
 
 .best__list {
   display: flex;
   justify-content: space-around;
   margin-top: rem(30px);
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .best__item {
   width: 30%;
+
+  @include phones {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(50px);
+  }
 }
 
 .best__pic {
@@ -44,12 +60,22 @@
 .best__info {
   text-align: center;
   margin-top: rem(30px);
+  
+  @include phones {
+    text-align: left;
+    margin-left: rem(30px);
+    margin-top: 0;
+  }
 }
 
 .best__title {
   @include lifehack;
   font-size: rem(24px);
   line-height: 1.17;
+
+  @include phones {
+    font-size: rem(24px);
+  }
 }
 
 .best__desc p {

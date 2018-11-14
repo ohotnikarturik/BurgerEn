@@ -110,12 +110,27 @@
   color: $white;
   @include lifehack();
   text-transform: lowercase;
+
+  @include phones {
+    font-size: rem(54px);
+  }
 }
 
 .hero__pic, .hero__desc {
   width: 50%;
   padding-left: rem(10px);
+
+  @include phones {
+    width: 90%;
+    padding-left: 0;
+  }
 }
+
+.hero__desc  {
+  @include phones {
+    margin-top: 25px;
+  }
+} 
 
 .hero__pic-img {
   max-width: 95%;

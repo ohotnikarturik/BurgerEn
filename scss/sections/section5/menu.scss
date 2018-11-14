@@ -14,6 +14,10 @@
   @include tablets {
     padding-left: rem(25px);
   }
+
+  @include phones {
+    padding: rem(60px) 0 0 rem(60px);
+  }
 }
 
 .menu__acco-list {
@@ -44,8 +48,6 @@
   }
 }
 
-
-
 .menu__acco-title {
   font-size: rem(40px);
   @include gagalin();
@@ -53,6 +55,10 @@
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin-bottom: rem(40px);
+
+  @include phones {
+    margin-bottom: rem(60px);
+  }
 }
 
 .menu__acco-text {

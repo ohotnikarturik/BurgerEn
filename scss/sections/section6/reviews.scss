@@ -33,15 +33,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  // opacity: 0;
+  opacity: 0;
   transition: .5s;
   background: rgba(#141414, .7);
   cursor: pointer;
-  // transform: scale(.5);
+  transform: scale(.5);
   padding: rem(45px) rem(20px);
 
   @include tablets {
-    padding: rem(20px) rem(55px);
+    padding: rem(30px) rem(55px) rem(45px) rem(55px);
+  }
+
+  @include phones {
+    padding: rem(45px) rem(55px) rem(20px) rem(55px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +57,10 @@
   font-size: rem(14px);
   color: $white;
   
+  @include phones {
+    font-size: rem(24px);
+    text-align: center;
+  }
 }
 
 .reviews__text {
@@ -65,8 +73,16 @@
   @include tablets {
     text-align: center;
   }
+
+  @include phones {
+    display: none;
+  }
 }
 
 .btn_hover_black {
   margin-top: rem(10px);
+
+  @include tablets {
+    margin-top: rem(25px);
+  }
 }
