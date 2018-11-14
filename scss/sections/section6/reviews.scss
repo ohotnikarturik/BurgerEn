@@ -45,7 +45,6 @@
   }
 
   @include phones {
-    padding: rem(45px) rem(55px) rem(20px) rem(55px);
     display: flex;
     flex-direction: column;
     align-items: center;

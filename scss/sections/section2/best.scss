@@ -6,10 +6,6 @@
 
 .best-content {
   margin-top: rem(110px);
-
-  @include phones {
-    margin-top: rem(-150px);
-  }
 }
 
 .best__list {

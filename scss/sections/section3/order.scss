@@ -194,6 +194,10 @@
 .order__desc {
   padding-top: rem(45px);
   padding-left: rem(10px);
+
+  @include phones {
+    padding-top: rem(10px);
+  }
 }
 
 .order__desc-text {
@@ -201,6 +205,10 @@
   color: $white;
   font-size: rem(14px);
   margin-top: rem(45px);
+
+  @include phones {
+    margin-top: rem(10px);
+  }
 }
 
 .order__desc-price {
@@ -213,7 +221,7 @@
   }
 
   @include phones {
-    margin-top: rem(15px);
+    margin-top: rem(5px);
   }
 }
 
