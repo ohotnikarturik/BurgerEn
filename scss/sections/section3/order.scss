@@ -26,6 +26,9 @@
 .order__content {
   display: flex;
   justify-content: center;
+  max-width: 90%;
+  margin-left: rem(35px);
+  overflow: hidden;
 
   @include tablets {
     text-align: center;

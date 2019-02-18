@@ -32,6 +32,10 @@
   position: relative;
   display: flex;
   overflow: hidden;
+
+  .active .menu__acco-title  {
+    color: $yellow;
+  }
 }
 
 .menu__acco-trigger {
@@ -61,11 +65,22 @@
   }
 }
 
+
+
+
 .menu__acco-text {
   background: rgba(47, 50, 52, 0.93);
-  width: rem(540px);
   color: $white;
   width: 0;
+  transition: all 1s;
+  
+  p {
+    padding: rem(20px);
+  }
+
+  @include phones {
+    max-width: rem(190px);
+  }
 }
 
 

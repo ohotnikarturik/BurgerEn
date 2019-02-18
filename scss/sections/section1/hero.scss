@@ -65,6 +65,12 @@
   &:last-child:after {
     display: none;
   }
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .nav__link {
@@ -79,6 +85,10 @@
   
   &:hover {
     text-decoration: underline;
+  }
+
+  @include tablets {
+    font-size: rem(24px);
   }
 }
 
@@ -142,6 +152,6 @@
   margin-bottom: rem(45px);
 
   @include phones {
-    margin-bottom: rem(100px);
+    margin-bottom: rem(40px);
   }
 }

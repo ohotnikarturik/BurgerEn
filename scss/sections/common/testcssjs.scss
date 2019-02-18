@@ -1,0 +1,157 @@
+// test overlay-menu
+.overlay__menu {
+  position: absolute;
+  background: rgba(63, 59, 57, 0.98);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  display: none;
+}
+
+.overlay__logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+
+
+
+
+// test overlay-review
+.overlay__review {
+  position: fixed;
+  background: rgba(63, 59, 57, 0.98);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  display: none;
+}
+.overlay__review-container {
+  position: relative;
+  padding: 10px;
+}
+
+.overlay__review-content {
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  background: #fff;
+}
+
+.overlay__btn-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: rgb(236, 132, 104);
+  font-size: 23px;
+  font-weight: normal;
+  font-family: helvetica;
+
+  &_menu {
+    top: 10px;
+    right: 15px;
+    font-size: 40px;
+    color: #c1c2c2;
+  }
+}
+
+
+// MENU
+.width {
+  width: 500px;
+}
+
+
+// SLIDER
+
+.order__slider {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.slider__item {
+  height: 100%;
+  width: 500px;
+  display: inline-block;
+}
+
+.slider__item-img {
+  width: 500px;
+  height: 300px;
+}
+
+
+.order__slider-images {
+  display: block;
+  width: 500px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  white-space: nowrap;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.order__slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slider__dot-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.slider__dot-circle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: silver;
+  cursor: pointer;
+}
+
+.slider__btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid sienna;
+  // transform: rotate(45deg);
+  // border-bottom-color: transparent;
+  // border-right-color: transparent;
+  // border-radius: 4px;
+
+  &-left {
+    top: 150px;
+    left: -40px;
+    position: absolute;
+  }
+
+  &-right {
+    top: 150px;
+    right: -40px;
+    position: absolute;
+  }
+}

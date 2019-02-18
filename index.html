@@ -11,6 +11,7 @@
   <link rel="icon" href="img/faviconburger.ico" type="image/x-icon">
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- ANIMATIONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -20,7 +21,7 @@
   <div class="wrapper">
     <div class="maincontent">
       <!-- SECTION-1 -->
-      <section class="section hero">
+      <section class="section hero active">
         <div class="container hero__container">
           <header class="header">
             <a href="#" class="logo">
@@ -30,15 +31,15 @@
             <div class="header__btns">
               <nav class="nav">
                 <ul class="nav__list">
-                  <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">burgers</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">team</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">menu</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">reviews</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">contacts</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="1">about us</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="2" v>burgers</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="3">team</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="4">menu</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="5">reviews</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="7">contacts</a></li>
                 </ul>
               </nav>
-              <a href="#" class="btn">Order</a>
+              <a href="#" class="btn" data-scroll-to="6">Order</a>
               <div class="menu-toggle">
                 <a href="#" class="menu-toggle__link">
                   <ul class="menu-toggle__list">
@@ -117,126 +118,597 @@
       <!-- SECTION-3 -->
       <section class="section order">
         <div class="container order__container">
-          <div class="arrow-block__left">
-            <a href="#" class="arrow-button arrow-button_left"></a>
-          </div>
-          <main class="order__content">
-            <div class="order__content-left">
-              <div class="order__composition">
-                <div class="order__composition-pic">
-                  <img src="img/section3/burgersostav.png" alt="composition" class="order__cmposition-img">
-                </div>
-                <span class="order__composition-text">Composition</span>
-                <div class="dropdown__composition">
-                  <ul class="composition__list">
-                    <li class="composition__item">
-                      <div class="composition__item-pic">
-                        <svg class="composition__item-img composition__item-img_color_beef">
-                          <use xlink:href="img/sprite.svg#beef"></use>
-                        </svg>
-                      </div>
-                      <div class="composition__item-text">Beef</div>
-                      <div class="composition__item-amount">
-                        <div class="composition__item-number">300</div>
-                        <div class="composition__item-calculus">g</div>
-                      </div>
-                    </li>
-                    <li class="composition__item">
-                      <div class="composition__item-pic">
-                        <svg class="composition__item-img composition__item-img_color_buns">
-                          <use xlink:href="img/sprite.svg#buns"></use>
-                        </svg>
-                      </div>
-                      <div class="composition__item-text">Bun</div>
-                      <div class="composition__item-amount">
-                        <div class="composition__item-number">100</div>
-                        <div class="composition__item-calculus">g</div>
-                      </div>
-                    </li>
-                    <li class="composition__item">
-                      <div class="composition__item-pic">
-                        <svg class="composition__item-img composition__item-img_color_salad">
-                          <use xlink:href="img/sprite.svg#salad"></use>
-                        </svg>
-                      </div>
-                      <div class="composition__item-text">Greens</div>
-                      <div class="composition__item-amount">
-                        <div class="composition__item-number">70</div>
-                        <div class="composition__item-calculus">g</div>
-                      </div>
-                    </li>
-                    <li class="composition__item">
-                      <div class="composition__item-pic">
-                        <svg class="composition__item-img composition__item-img_color_sauce">
-                          <use xlink:href="img/sprite.svg#sauce"></use>
-                        </svg>
-                      </div>
-                      <div class="composition__item-text">Sauce</div>
-                      <div class="composition__item-amount">
-                        <div class="composition__item-number">150</div>
-                        <div class="composition__item-calculus">g</div>
-                      </div>
-                    </li>
-                    <li class="composition__item">
-                      <div class="composition__item-pic">
-                        <svg class="composition__item-img composition__item-img_color_cucumber">
-                          <use xlink:href="img/sprite.svg#cucumber"></use>
-                        </svg>
-                      </div>
-                      <div class="composition__item-text">Vegetables</div>
-                      <div class="composition__item-amount">
-                        <div class="composition__item-number">200</div>
-                        <div class="composition__item-calculus">g</div>
-                      </div>
-                    </li>
-                    <li class="composition__item">
-                      <div class="composition__item-pic">
-                        <svg class="composition__item-img composition__item-img_color_cheese">
-                          <use xlink:href="img/sprite.svg#cheese"></use>
-                        </svg>
-                      </div>
-                      <div class="composition__item-text">Cheese</div>
-                      <div class="composition__item-amount">
-                        <div class="composition__item-number">80</div>
-                        <div class="composition__item-calculus">g</div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="order__content-pic">
-                <img src="img/section3/burgerdarck.png" alt="burger" class="order__content-img">
-              </div>
-              <div class="order__kalorit">
-                <div class="order__kalorit-pic">
-                  <img src="img/section3/kkal.png" alt="kalorit" class="order__kalorit-img">
-                  <span class="order__kalorit-amount">1200</span>
-                </div>
-                <span class="order__kalorit-text">kcal</span>
-              </div>
-            </div>
-            <div class="order__content-right">
-              <div class="order__desc">
-                <div class="section-title section-title_color_white">Dark BEEF Burger</div>
-                <div class="order__desc-text">
-                  <p>Your good old friend, with a chopped steak of 100% beef, three slices of the most delicate
-                    Emmental cheese, two tomatoes, onions, salad and grilled sauce now with the addition of an exotic
-                    churasco sauce.</p>
-                </div>
-                <div class="order__desc-price">
-                  <div class="order__price-cost">
-                    <div class="order__desc-price-number">5,00</div>
-                    <div class="order__desc-price-text">Euro</div>
+          <div class="slider">
+            <div>
+              <main class="order__content">
+                <div class="order__content-left">
+                  <div class="order__composition">
+                    <div class="order__composition-pic">
+                      <img src="img/section3/burgersostav.png" alt="composition" class="order__cmposition-img">
+                    </div>
+                    <span class="order__composition-text">Composition</span>
+                    <div class="dropdown__composition">
+                      <ul class="composition__list">
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_beef">
+                              <use xlink:href="img/sprite.svg#beef"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Beef</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">300</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_buns">
+                              <use xlink:href="img/sprite.svg#buns"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Bun</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">100</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_salad">
+                              <use xlink:href="img/sprite.svg#salad"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Greens</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">70</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_sauce">
+                              <use xlink:href="img/sprite.svg#sauce"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Sauce</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">150</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cucumber">
+                              <use xlink:href="img/sprite.svg#cucumber"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Vegetables</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">200</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cheese">
+                              <use xlink:href="img/sprite.svg#cheese"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Cheese</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">80</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="order__price-order">
-                    <a href="#" class="btn">Order</a>
+                  <div class="order__content-pic">
+                    <img src="img/section3/burgers-slider/burgerdarck.png" alt="burger" class="order__content-img">
+                  </div>
+                  <div class="order__kalorit">
+                    <div class="order__kalorit-pic">
+                      <img src="img/section3/kkal.png" alt="kalorit" class="order__kalorit-img">
+                      <span class="order__kalorit-amount">1200</span>
+                    </div>
+                    <span class="order__kalorit-text">kcal</span>
                   </div>
                 </div>
-              </div>
+                <div class="order__content-right">
+                  <div class="order__desc">
+                    <div class="section-title section-title_color_white">Dark BEEF Burger</div>
+                    <div class="order__desc-text">
+                      <p>Your good old friend, with a chopped steak of 100% beef, three slices of the most delicate
+                        Emmental cheese, two tomatoes, onions, salad and grilled sauce now with the addition of an
+                        exotic
+                        churasco sauce.</p>
+                    </div>
+                    <div class="order__desc-price">
+                      <div class="order__price-cost">
+                        <div class="order__desc-price-number">5,00</div>
+                        <div class="order__desc-price-text">Euro</div>
+                      </div>
+                      <div class="order__price-order">
+                        <a href="#" class="btn">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
             </div>
-          </main>
-          <div class="arrow-block__right">
-            <a href="#" class="arrow-button arrow-button_right"></a>
+            <div>
+              <main class="order__content">
+                <div class="order__content-left">
+                  <div class="order__composition">
+                    <div class="order__composition-pic">
+                      <img src="img/section3/burgersostav.png" alt="composition" class="order__cmposition-img">
+                    </div>
+                    <span class="order__composition-text">Composition</span>
+                    <div class="dropdown__composition">
+                      <ul class="composition__list">
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_beef">
+                              <use xlink:href="img/sprite.svg#beef"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Beef</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">300</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_buns">
+                              <use xlink:href="img/sprite.svg#buns"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Bun</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">100</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_salad">
+                              <use xlink:href="img/sprite.svg#salad"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Greens</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">70</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_sauce">
+                              <use xlink:href="img/sprite.svg#sauce"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Sauce</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">150</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cucumber">
+                              <use xlink:href="img/sprite.svg#cucumber"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Vegetables</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">200</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cheese">
+                              <use xlink:href="img/sprite.svg#cheese"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Cheese</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">80</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="order__content-pic">
+                    <img src="img/section3/burgers-slider/Chiken burger.png" alt="burger" class="order__content-img">
+                  </div>
+                  <div class="order__kalorit">
+                    <div class="order__kalorit-pic">
+                      <img src="img/section3/kkal.png" alt="kalorit" class="order__kalorit-img">
+                      <span class="order__kalorit-amount">1200</span>
+                    </div>
+                    <span class="order__kalorit-text">kcal</span>
+                  </div>
+                </div>
+                <div class="order__content-right">
+                  <div class="order__desc">
+                    <div class="section-title section-title_color_white">Chiken burger</div>
+                    <div class="order__desc-text">
+                      <p>Your good old friend, with a chopped steak of 100% beef, three slices of the most delicate
+                        Emmental cheese, two tomatoes, onions, salad and grilled sauce now with the addition of an
+                        exotic
+                        churasco sauce.</p>
+                    </div>
+                    <div class="order__desc-price">
+                      <div class="order__price-cost">
+                        <div class="order__desc-price-number">8,00</div>
+                        <div class="order__desc-price-text">Euro</div>
+                      </div>
+                      <div class="order__price-order">
+                        <a href="#" class="btn">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <div>
+              <main class="order__content">
+                <div class="order__content-left">
+                  <div class="order__composition">
+                    <div class="order__composition-pic">
+                      <img src="img/section3/burgersostav.png" alt="composition" class="order__cmposition-img">
+                    </div>
+                    <span class="order__composition-text">Composition</span>
+                    <div class="dropdown__composition">
+                      <ul class="composition__list">
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_beef">
+                              <use xlink:href="img/sprite.svg#beef"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Beef</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">300</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_buns">
+                              <use xlink:href="img/sprite.svg#buns"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Bun</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">100</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_salad">
+                              <use xlink:href="img/sprite.svg#salad"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Greens</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">70</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_sauce">
+                              <use xlink:href="img/sprite.svg#sauce"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Sauce</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">150</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cucumber">
+                              <use xlink:href="img/sprite.svg#cucumber"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Vegetables</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">200</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cheese">
+                              <use xlink:href="img/sprite.svg#cheese"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Cheese</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">80</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="order__content-pic">
+                    <img src="img/section3/burgers-slider//NYC-Diner-Bacon-Cheeseburger.png" alt="burger" class="order__content-img">
+                  </div>
+                  <div class="order__kalorit">
+                    <div class="order__kalorit-pic">
+                      <img src="img/section3/kkal.png" alt="kalorit" class="order__kalorit-img">
+                      <span class="order__kalorit-amount">1200</span>
+                    </div>
+                    <span class="order__kalorit-text">kcal</span>
+                  </div>
+                </div>
+                <div class="order__content-right">
+                  <div class="order__desc">
+                    <div class="section-title section-title_color_white">Bacon Cheeseburger</div>
+                    <div class="order__desc-text">
+                      <p>Your good old friend, with a chopped steak of 100% beef, three slices of the most delicate
+                        Emmental cheese, two tomatoes, onions, salad and grilled sauce now with the addition of an
+                        exotic
+                        churasco sauce.</p>
+                    </div>
+                    <div class="order__desc-price">
+                      <div class="order__price-cost">
+                        <div class="order__desc-price-number">4,50</div>
+                        <div class="order__desc-price-text">Euro</div>
+                      </div>
+                      <div class="order__price-order">
+                        <a href="#" class="btn">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <div>
+              <main class="order__content">
+                <div class="order__content-left">
+                  <div class="order__composition">
+                    <div class="order__composition-pic">
+                      <img src="img/section3/burgersostav.png" alt="composition" class="order__cmposition-img">
+                    </div>
+                    <span class="order__composition-text">Composition</span>
+                    <div class="dropdown__composition">
+                      <ul class="composition__list">
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_beef">
+                              <use xlink:href="img/sprite.svg#beef"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Beef</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">300</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_buns">
+                              <use xlink:href="img/sprite.svg#buns"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Bun</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">100</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_salad">
+                              <use xlink:href="img/sprite.svg#salad"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Greens</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">70</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_sauce">
+                              <use xlink:href="img/sprite.svg#sauce"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Sauce</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">150</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cucumber">
+                              <use xlink:href="img/sprite.svg#cucumber"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Vegetables</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">200</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cheese">
+                              <use xlink:href="img/sprite.svg#cheese"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Cheese</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">80</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="order__content-pic">
+                    <img src="img/section3/burgers-slider/Spicy_Shrimp_Burger.png" alt="burger" class="order__content-img">
+                  </div>
+                  <div class="order__kalorit">
+                    <div class="order__kalorit-pic">
+                      <img src="img/section3/kkal.png" alt="kalorit" class="order__kalorit-img">
+                      <span class="order__kalorit-amount">1200</span>
+                    </div>
+                    <span class="order__kalorit-text">kcal</span>
+                  </div>
+                </div>
+                <div class="order__content-right">
+                  <div class="order__desc">
+                    <div class="section-title section-title_color_white">Spicy Shrimp Burger</div>
+                    <div class="order__desc-text">
+                      <p>Your good old friend, with a chopped steak of 100% beef, three slices of the most delicate
+                        Emmental cheese, two tomatoes, onions, salad and grilled sauce now with the addition of an
+                        exotic
+                        churasco sauce.</p>
+                    </div>
+                    <div class="order__desc-price">
+                      <div class="order__price-cost">
+                        <div class="order__desc-price-number">6,00</div>
+                        <div class="order__desc-price-text">Euro</div>
+                      </div>
+                      <div class="order__price-order">
+                        <a href="#" class="btn">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+            <div>
+              <main class="order__content">
+                <div class="order__content-left">
+                  <div class="order__composition">
+                    <div class="order__composition-pic">
+                      <img src="img/section3/burgersostav.png" alt="composition" class="order__cmposition-img">
+                    </div>
+                    <span class="order__composition-text">Composition</span>
+                    <div class="dropdown__composition">
+                      <ul class="composition__list">
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_beef">
+                              <use xlink:href="img/sprite.svg#beef"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Beef</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">300</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_buns">
+                              <use xlink:href="img/sprite.svg#buns"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Bun</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">100</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_salad">
+                              <use xlink:href="img/sprite.svg#salad"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Greens</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">70</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_sauce">
+                              <use xlink:href="img/sprite.svg#sauce"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Sauce</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">150</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cucumber">
+                              <use xlink:href="img/sprite.svg#cucumber"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Vegetables</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">200</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                        <li class="composition__item">
+                          <div class="composition__item-pic">
+                            <svg class="composition__item-img composition__item-img_color_cheese">
+                              <use xlink:href="img/sprite.svg#cheese"></use>
+                            </svg>
+                          </div>
+                          <div class="composition__item-text">Cheese</div>
+                          <div class="composition__item-amount">
+                            <div class="composition__item-number">80</div>
+                            <div class="composition__item-calculus">g</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="order__content-pic">
+                    <img src="img/section3/burgers-slider/burger_sandwich_PNG4124.png" alt="burger" class="order__content-img">
+                  </div>
+                  <div class="order__kalorit">
+                    <div class="order__kalorit-pic">
+                      <img src="img/section3/kkal.png" alt="kalorit" class="order__kalorit-img">
+                      <span class="order__kalorit-amount">1200</span>
+                    </div>
+                    <span class="order__kalorit-text">kcal</span>
+                  </div>
+                </div>
+                <div class="order__content-right">
+                  <div class="order__desc">
+                    <div class="section-title section-title_color_white">Sandwich</div>
+                    <div class="order__desc-text">
+                      <p>Your good old friend, with a chopped steak of 100% beef, three slices of the most delicate
+                        Emmental cheese, two tomatoes, onions, salad and grilled sauce now with the addition of an
+                        exotic
+                        churasco sauce.</p>
+                    </div>
+                    <div class="order__desc-price">
+                      <div class="order__price-cost">
+                        <div class="order__desc-price-number">4,00</div>
+                        <div class="order__desc-price-text">Euro</div>
+                      </div>
+                      <div class="order__price-order">
+                        <a href="#" class="btn">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
           </div>
         </div>
       </section>
@@ -247,7 +719,7 @@
             <h2 class="section-title section-title_align_centr">Team</h2>
             <ul class="team__acco">
               <li class="team__acco-item">
-                <a href="" class="team__acco-trigger">
+                <a href="#" class="team__acco-trigger">
                   Daniel Radcliffe
                 </a>
                 <div class="team__acco-content">
@@ -263,8 +735,8 @@
                   </div>
                 </div>
               </li>
-              <li class="team__acco-item team__acco-item--active">
-                <a href="" class="team__acco-trigger">
+              <li class="team__acco-item">
+                <a href="#" class="team__acco-trigger">
                   Richard James
                 </a>
                 <div class="team__acco-content">
@@ -281,7 +753,7 @@
                 </div>
               </li>
               <li class="team__acco-item">
-                <a href="" class="team__acco-trigger">
+                <a href="#" class="team__acco-trigger">
                   Jake Finn
                 </a>
                 <div class="team__acco-content">
@@ -298,7 +770,7 @@
                 </div>
               </li>
               <li class="team__acco-item">
-                <a href="" class="team__acco-trigger">
+                <a href="#" class="team__acco-trigger">
                   Nikolay Ivanov
                 </a>
                 <div class="team__acco-content">
@@ -388,8 +860,8 @@
             <div class="reviews__hover">
               <div class="reviews__title">Konstantin Spielberg</div>
               <div class="reviews__text">
-                <p>Thoughts are all about them and about them, about them and about them. You can not resist, you can
-                  not
+                <p>Thoughts are all about them and about them, about them and about them. You can not resist, you
+                  cannot
                   forget ... I never thought that buns can be so soft, the meatball is so juicy, and the cheese is so
                   melted.</p>
               </div>
@@ -585,7 +1057,7 @@
                     </svg>
                     <a href="tel:+78123771377" class="footer__phone-number">
                       +7(812)377-13-77
-                    </a> 
+                    </a>
                   </div>
                 </div>
               </div>
@@ -631,16 +1103,55 @@
   <!-- NAVIGATION -->
   <div class="fixid-nav__block">
     <ul class="fixed-nav">
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="0"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="1"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="2"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="3"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="4"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="5"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="6"></a></li>
+      <li class="fixed-nav__item"><a href="#" class="fixed-nav__link" data-scroll-to="7"></a></li>
     </ul>
   </div>
+
+  <!-- OVERLAY MENU -->
+  <div class="overlay__menu">
+    <a href="#" class="overlay__logo">
+      <img src="img/section1/logo.svg" alt="logo" class="logo__pic">
+      <span class="mrBurger">mrBurger</span>
+    </a>
+    <ul class="overlay__menu-list">
+      <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="1">about us</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="2">burgers</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="3">team</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="4">menu</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="5">reviews</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="7">contacts</a></li>
+    </ul>
+    <a href="#" class="overlay__btn-close overlay__btn-close_menu">x</a>
+  </div>
+
+  <!-- OVERLAY REVIEW -->
+  <div class="overlay__review">
+    <div class="overlay__review-container">
+      <div class="overlay__review-content">
+        Thoughts are all about them and about them, about them and about them. You can not resist, you cannot
+        forget ... I never thought that buns can be so soft, the meatball is so juicy, and the cheese is so
+        melted.
+        <a href="#" class="overlay__btn-close">x</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+  <!-- SLIDER PLUGIN -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <!-- TEST -->
+  <script src="/js/main.js"></script>
 
 </body>
 

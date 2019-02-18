@@ -2,6 +2,12 @@
   background: url('../img/section2/bg.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
+
+  @include phones {
+    background: url('../img/section2/bg.jpg') left center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 }
 
 .best-content {
