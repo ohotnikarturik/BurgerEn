@@ -1,12 +1,14 @@
-.location {
-  background: url('../img/section8/map.jpg') center center no-repeat;
-  background-size: cover;
-  position: relative;
+#map {
+  width: 100%;
+  height: 90%;
+
+  @include phones {
+    height: 80%;
+  }
 }
 
 .footer {
-  height: rem(60px);
-  position: absolute;
+  height: 10%;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -14,7 +16,7 @@
   background-size: cover;
 
   @include phones {
-    height: rem(115px);
+    height: 20%;
   }
 }
 
