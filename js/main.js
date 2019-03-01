@@ -244,7 +244,7 @@ function init() {
   ],
     myCollection = new ymaps.GeoObjectCollection({}, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/section8/map-marker.png',
+      iconImageHref: 'img/section8/map-marker.png',
       iconImageSize: [46, 57],
       iconImageOffset: [-23, -57]
     });
